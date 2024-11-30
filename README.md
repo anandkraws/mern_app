@@ -35,13 +35,13 @@ backend run on url: http://localhost:9000
 
 1. Run backend first and then run frontend 
    > **Note:**
-   If you plan to change backend port number update the same port in frontend code (Dashboard.js, LoginForm.js)
+   If you intend to change the backend port to a new port number, you must update the corresponding new port in the frontend code (frontend/Dashboard.js, frontend/LoginForm.js).
 2. To access the Frontend application: http://localhost:3000
    > **Note:** 
-   If you run npm start - usually npm will auto open in default browser and manually you access with above url
+   If you execute the command “npm start,” npm will typically open in the default browser. You can manually access the application using the provided URL.
 3. Login with username: admin and Password: admin 
    > **Note:** 
-   you can change password in backend/server.js 
+   The password can be modified in the backend/server.js file. 
 
 4. Login page: 
    ![Alt text](frontend/LoginForm.png) 
