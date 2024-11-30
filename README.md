@@ -40,4 +40,5 @@ backend run on url: http://localhost:5000
 3. Login with username: admin and Password: admin 
    Note: you can change password in backend/server.js 
 
-
+4. Dashboard: 
+   ![Alt text](frontend/LoginForm.png) 
