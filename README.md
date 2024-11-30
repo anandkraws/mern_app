@@ -43,7 +43,7 @@ backend run on url: http://localhost:9000
    > **Note:** 
    The password can be modified in the backend/server.js file. 
 
-4. Login page: 
+4. Login page: http://localhost:3000
    ![Alt text](frontend/LoginForm.png) 
-   Dashboard: 
+   Dashboard after login: 
    ![Alt text](frontend/DashBoard.png) 
