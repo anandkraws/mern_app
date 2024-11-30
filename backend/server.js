@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const PORT = 9000;
 
 // Mock user (replace with database in production)
 const mockUser = {
