@@ -1,7 +1,6 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const cors = require("cors");
 
 const app = express();
 const PORT = 9000;
@@ -14,14 +13,6 @@ const mockUser = {
 
 // Middleware
 app.use(express.json()); // Parse JSON bodies
-
-const corsOptions = {
-  origin: ["http://localhost:3000", "http://127.0.0.1:3000"],
-  methods: "GET,POST,PUT,DELETE",
-  allowedHeaders: ["Content-Type", "x-access-token"],
-};
-
-app.use(cors(corsOptions)); // Enable Cross-Origin Resource Sharing
 
 // Secret key for JWT
 const SECRET_KEY = "mysecretkey";
