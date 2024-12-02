@@ -14,7 +14,14 @@ const mockUser = {
 
 // Middleware
 app.use(express.json()); // Parse JSON bodies
-app.use(cors()); // Enable Cross-Origin Resource Sharing
+
+const corsOptions = {
+  origin: "http://localhost:3000", // React app origin
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: ["Content-Type", "x-access-token"],
+};
+
+app.use(cors(corsOptions)); // Enable Cross-Origin Resource Sharing
 
 // Secret key for JWT
 const SECRET_KEY = "mysecretkey";
