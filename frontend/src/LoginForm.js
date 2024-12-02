@@ -10,7 +10,7 @@ function LoginForm({ setToken }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://43.205.119.248:9000/login/', {
+      const response = await axios.post('http://127.0.0.1:9000/login/', {
         username: username,
         password: password,
       }, {
