@@ -19,6 +19,9 @@ app.use(cors()); // Enable Cross-Origin Resource Sharing
 // Secret key for JWT
 const SECRET_KEY = "mysecretkey";
 
+app.post("/heatlz", (req, res) => {
+    console.log('Backend App is running')
+});
 // Login endpoint
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
